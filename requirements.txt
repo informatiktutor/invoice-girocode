@@ -1,0 +1,9 @@
+iso3166==2.0.2
+Pillow==9.0.1
+pycountry==22.1.10
+PyMuPDF==1.19.5
+python-dotenv==0.19.2
+schwifty==2022.2.0
+segno==1.4.1
+watchdog==2.1.6
+xmltodict==0.12.0
