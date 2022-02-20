@@ -18,16 +18,6 @@ https://pymupdf.readthedocs.io/en/latest/page.html
 https://github.com/martinblech/xmltodict
 """
 
-"""
-GIROCODE_RECIPIENT_NAME = 'Beate Musterfrau'
-GIROCODE_RECIPIENT_IBAN = 'DE91100000000123456789'
-GIROCODE_TEXT_FORMAT = '{reference} Dienstleistung'
-GIROCODE_QR_SCALE = 8
-GIROCODE_QR_BORDER = 0
-GIROCODE_PDF_PAGE_INDEX = 0
-GIROCODE_PDF_PAGE_PLACEHOLDER_IMAGE_INDEX = 0
-"""
-
 
 def create_girocode(reference, amount, **kwargs):
     # Invoking the constructor will make sure

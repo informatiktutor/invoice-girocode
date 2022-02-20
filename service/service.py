@@ -27,16 +27,6 @@ https://camcairns.github.io/python/2017/09/06/python_watchdog_jobs_queue.html
 load_dotenv(os.path.join(os.path.dirname(__file__), '.env'))
 
 
-"""
-WATCH_PDF_DIRECTORY = '/home/tutor/Dokumente/Fakturama-final/Dokumente/PDF/{date.year}/Rechnungen'
-WATCH_XML_DIRECTORY = '/home/tutor/Dokumente/Fakturama-final/Dokumente'
-WATCH_PDF_REGEX = '^.*?(RE[0-9]{2,})_.*\.pdf$'
-WATCH_XML_REGEX = '^.*?ZUGFeRD.xml$'
-
-RESULT_PDF_DIRECTORY = '/home/tutor/Dokumente/Buchhaltung/Rechnungen'
-"""
-
-
 ERROR_LOG_DIRECTORY = ENV('RESULT_PDF_DIRECTORY')
 
 WATCH_WRITE_TIMEOUT_MILLIS = 200
