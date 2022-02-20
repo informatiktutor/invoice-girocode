@@ -22,22 +22,27 @@ $ cp service/example.env service/.env
 $ vim service/.env
 ```
 
-Afterwards install the systemd service.
+Afterwards, install the systemd service.
 It is enabled and started automatically.
 
 ```
 # make install
 ```
 
-Now open Fakturama and print an invoice.
+Open Fakturama and enable ZUGFeRD XML file creation.
+This is required to get metadata about the invoice
+in an easily readable format.
 
-![Sample invoice with Girocode](docs/fakturama-print.png)
+![Fakturama ZUGFeRD settings](docs/zugferd-settings.png)
+
+You can now go ahead and print an invoice.
+
+![Fakturama print button](docs/fakturama-print.png)
 
 You should then see your placeholder image being replaced with a Girocode
 that contains the invoice's payment information and your configured bank details.
 
-![Sample invoice with Girocode](docs/invoice-girocode.png)
-
+![Sample Girocode](docs/invoice-girocode.png)
 
 ## Development
 
