@@ -27,8 +27,6 @@ https://camcairns.github.io/python/2017/09/06/python_watchdog_jobs_queue.html
 load_dotenv(os.path.join(os.path.dirname(__file__), '.env'))
 
 
-ERROR_LOG_DIRECTORY = ENV('RESULT_PDF_DIRECTORY')
-
 WATCH_WRITE_TIMEOUT_MILLIS = 200
 PROGRAM_LOOP_DELAY_MILLIS = 1000
 QUEUE_LOOP_DELAY_MILLIS = 100
@@ -113,7 +111,7 @@ def process_xml_pdf(xml_path, pdf_path):
 
 def main():
     os.makedirs(ENV('RESULT_PDF_DIRECTORY'), exist_ok=True)
-    os.makedirs(ERROR_LOG_DIRECTORY, exist_ok=True)
+    os.makedirs(os.path.dirname(ENV('ERROR_LOG_PATH')), exist_ok=True)
 
     watchdog_queue = Queue()
 
