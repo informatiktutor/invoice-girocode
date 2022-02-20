@@ -1,0 +1,8 @@
+[Unit]
+Description=Invoice Girocode
+
+[Service]
+ExecStart=/usr/local/libexec/invoice-girocode/venv/bin/python /usr/local/libexec/invoice-girocode/service.py
+
+[Install]
+WantedBy=multi-user.target
